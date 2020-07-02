@@ -1,0 +1,84 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>{{receita.title}}</title>
+    <link rel="stylesheet" href="/rec.css">
+
+{% endblock head %}
+
+{% block content %}
+
+    <div class="receita">
+
+        <img src="{{receita.image}}" alt="foto de {{receita.title}}">
+        <h1>{{receita.title}}</h1>
+        <p>{{receita.author}}</p>
+
+        <div class="ing-title">
+
+            <h2>Ingredientes</h2>
+            <a class="show">Esconder</a>
+
+        </div>
+
+        <div class="ingredientes">
+
+            
+            <ul>
+
+                {% for list in receita.ingredients %}
+
+                    <li>{{list}}</li>
+
+                {% endfor %}
+
+            </ul>
+
+
+        </div>
+
+        <div class="prep-title">
+
+            <h2>Modo de Preparo</h2>
+            <a class="show2">Esconder</a>
+
+        </div>
+        
+        <div class="preparo">
+            
+            <ul>
+
+                {% for list in receita.preparation %}
+
+                    <li>{{list}}</li>
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+        <div class="inf-title">
+
+            <h2>Informações</h2>
+            <a class="show3">Esconder</a>
+
+        </div>
+
+        <div class="informacoes">
+
+            <div class="inf">
+
+                <p>{{receita.information}}</p>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    <script src="/scripts.js"></script>
+
+{% endblock content %}

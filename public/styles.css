@@ -46,13 +46,52 @@ body{
 
 }
 
-.links p{
+.content{
 
+    margin: 0 230px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+    position: relative;
+
+}
+
+.content h1{
+
+    font-size: 32px;
     font-weight: bold;
-    color: #111111;
-    font-size: 16px;
-    line-height: 19px;
-    margin-right: 20px;
+    line-height: 38px;
+    padding: 117px 0 10px 90px;
+    
+
+}
+
+.content p{
+
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    opacity: 0.7;
+    padding-left: 90px;
+
+}
+
+.content img{
+
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+}
+
+h2{
+
+    margin: 0 230px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px; 
 
 }
 
@@ -75,7 +114,7 @@ body{
 
 }
 
-.card__content{
+.card__content h3{
 
     padding-top: 15px;
     font-size: 18px;
@@ -84,7 +123,7 @@ body{
 
 }
 
-.card__info{
+.card__content p{
 
     font-size: 14px;
     line-height: 18px;
@@ -107,77 +146,5 @@ body{
     color: #999999;
     font-size: 14px;
     line-height: 16px;
-
-}
-
-.modal-overlay{
-
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    
-}
-
-.modal{
-
-    background-color: white;
-    border-radius: 16px;
-    width: 50%;
-    height: 60%;
-    margin: 20vh auto;
-    position: relative;
-
-}
-
-.modal-content img{
-
-    position: relative;
-    border-radius: 16px;
-    margin: 5vh 35px 0;
-    width: 600px;
-    height: 200px;
-
-}
-
-.modal-content h3{
-
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 28px;
-    text-align: center;
-    padding-top: 5px;
-
-}
-
-.modal-content p{
-
-    font-size: 18px;
-    line-height: 21px;
-    color: #777777;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 50px;
-
-}
-
-.modal-close a{
-
-    font-size: 16px;
-    color: #999999;
-    line-height: 19px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-
-}
-
-.modal-overlay.active{
-
-    visibility: visible;
-    opacity: 100;
 
 }

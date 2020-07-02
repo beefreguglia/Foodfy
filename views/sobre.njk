@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Sobre - Foodfy</title>
+    <link rel="stylesheet" href="/sobre.css">
+
+{% endblock head %}
+
+{% block header %}
+
+    <div class="links">
+
+        <img src="/assets/logo.png" alt="Logo Foodfy">  
+        <p>Sobre</p>
+        <a href="/receitas">Receitas</a>
+
+    </div>
+
+
+{% endblock header %}
+
+{% block content %}
+
+    <div class="content">
+
+        <h1>Sobre o Foodfy</h1>
+        <p>{{about.text1}}</p>
+        <h2>Como tudo começou...</h2>
+        <p>{{about.text2}}</p>
+        <h2>Nossas Receitas</h2>
+        <p>{{about.text3}}</p>
+
+    </div>
+
+{% endblock content %}
