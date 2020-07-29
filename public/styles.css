@@ -48,12 +48,13 @@ body{
 
 .content{
 
-    margin: 0 230px;
+    margin: 0 auto;
     background-color: #FBDFDB;
     border-radius: 30px;
-    width: 940px;
+    min-width: 940px;
     height: 366px;
     position: relative;
+    max-width: 1050px;
 
 }
 
